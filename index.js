@@ -6,7 +6,7 @@ let colorGen = require('./lib/color-generator')
 let round = require('./lib/round-precision')
 
 let app = express()
-let port = Number(process.env.NODE_PORT) || 8080
+let port = Number(process.env.NODE_PORT) || 8000
 
 let server = http.createServer(app)
 app.use(gracefulShutdown(server, { maxWaitTimeout: 10000 }))
