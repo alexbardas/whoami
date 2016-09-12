@@ -1,0 +1,8 @@
+FROM hypriot/rpi-node:6.5
+
+WORKDIR /usr/src/app
+COPY . /usr/src/app
+RUN npm install
+EXPOSE 8000
+
+CMD ["node", "index.js"]
